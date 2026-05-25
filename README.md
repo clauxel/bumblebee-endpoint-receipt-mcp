@@ -1,48 +1,47 @@
 # Bumblebee Endpoint Receipt
 
-Bumblebee Endpoint Receipt is a hosted remote MCP for developer endpoint scanner MCP.
+Hosted MCP for developer endpoint scanner MCP.
 
-This repository is a public documentation project for Bumblebee Endpoint Receipt. Its structure follows the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and a public-safe boundary.
+Bumblebee Endpoint Receipt is a paid remote MCP endpoint for developer endpoint scanner MCP. It exposes structured JSON tools, a public server card, token-based access, usage receipts, and audit-ready workflow evidence for AI agents and coding teams.
 
-## Start Here
+## Public Endpoints
 
-- Website: https://bumblebeereceipt.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=bumblebeereceipt_public_docs&utm_content=readme_home
-- Pricing: https://bumblebeereceipt.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=bumblebeereceipt_public_docs&utm_content=readme_pricing
-- Checkout: https://bumblebeereceipt.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=bumblebeereceipt_public_docs&utm_content=readme_checkout
-- Support: support@aigeamy.com
-
-## Remote MCP
-
-- Endpoint: https://bumblebeereceipt.clauxel.com/mcp
-- Server card: https://bumblebeereceipt.clauxel.com/server-card.json
+- Website: https://bumblebeereceipt.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605r25
+- MCP endpoint: https://bumblebeereceipt.clauxel.com/mcp
+- Server card: https://bumblebeereceipt.clauxel.com/.well-known/mcp/server-card.json
 - Registry name: `com.clauxel.bumblebeereceipt/bumblebeereceipt-mcp`
-- Tools: `scan_endpoint_exposure`, `explain_package_hit`, `issue_release_receipt`, `read_scan_history`
 
-## Reading Order
+## Access
 
-1. [Quickstart](guide/quickstart.md)
-2. [Evaluation guide](guide/evaluation.md)
-3. [Checkout and pricing](guide/checkout-and-pricing.md)
-4. [Workflow notes](features/workflow.md)
-5. [Security model](features/security-model.md)
-6. [Public link reference](reference/links.md)
+This is a paid hosted remote MCP. Production calls require a bearer token issued from the product website.
 
-## Audience
+```http
+Authorization: Bearer <token>
+```
 
-AI product teams, operations leads, workflow owners, and technical evaluators.
+Unauthenticated browser visits to `/mcp` return a clear JSON error instead of internal details.
 
-## Capabilities
+## Tools
 
-- Streamable HTTP MCP endpoint
-- Bearer-token access for production calls
-- Structured tool-call output
-- Receipt-oriented evidence export
-- Public server card and registry metadata
-- MCP tool: scan_endpoint_exposure
-- MCP tool: explain_package_hit
-- MCP tool: issue_release_receipt
-- MCP tool: read_scan_history
+- `scan_endpoint_exposure`
+- `explain_package_hit`
+- `issue_release_receipt`
+- `read_scan_history`
 
-## Public-Safe Boundary
+## Quick Start
 
-This repository contains documentation only. It does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.
+1. Open the website and choose a plan.
+2. Create or request an API token.
+3. Add the endpoint to an MCP client that supports Streamable HTTP remote servers.
+4. Send JSON-RPC requests with the bearer token.
+
+## Useful Links
+
+- Product page: https://bumblebeereceipt.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605r25
+- Pricing: https://bumblebeereceipt.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605r25#pricing
+- Server card: https://bumblebeereceipt.clauxel.com/.well-known/mcp/server-card.json
+- MCP endpoint: https://bumblebeereceipt.clauxel.com/mcp
+
+## Status
+
+This repository is a public documentation and directory-submission reference for the hosted service. It does not contain the private production source code.
