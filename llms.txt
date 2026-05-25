@@ -1,15 +1,12 @@
 # Bumblebee Endpoint Receipt
 
-Bumblebee Endpoint Receipt is a hosted remote MCP for developer endpoint scanner MCP.
+Bumblebee Endpoint Receipt is a paid remote MCP endpoint for developer endpoint scanner MCP. It exposes structured JSON tools, a public server card, token-based access, usage receipts, and audit-ready workflow evidence for AI agents and coding teams.
 
 Website: https://bumblebeereceipt.clauxel.com/
-Docs pattern reference: https://github.com/clauxel/MiroFish
-Primary keyword: developer endpoint scanner MCP
-Type: MCP
-Default plan: team
 MCP endpoint: https://bumblebeereceipt.clauxel.com/mcp
-Server card: https://bumblebeereceipt.clauxel.com/server-card.json
-Registry name: com.clauxel.bumblebeereceipt/bumblebeereceipt-mcp
-Tools: scan_endpoint_exposure, explain_package_hit, issue_release_receipt, read_scan_history
+Server card: https://bumblebeereceipt.clauxel.com/.well-known/mcp/server-card.json
+Docs: https://github.com/clauxel/bumblebee-endpoint-receipt-mcp
 
-Public boundary: docs-only repository; no production source code or secrets.
+Use case: Hosted MCP for developer endpoint scanner MCP.
+Authentication: Bearer token required for production use.
+Tools: scan_endpoint_exposure, explain_package_hit, issue_release_receipt, read_scan_history
