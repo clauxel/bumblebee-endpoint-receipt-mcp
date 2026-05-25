@@ -1,0 +1,25 @@
+{
+  "error": "Error: server card fetch failed 522",
+  "fallback": {
+    "slug": "bumblebeereceipt",
+    "name": "Bumblebee Endpoint Receipt",
+    "website": "https://bumblebeereceipt.clauxel.com/",
+    "endpoint": "https://bumblebeereceipt.clauxel.com/mcp",
+    "serverCard": "https://bumblebeereceipt.clauxel.com/.well-known/mcp/server-card.json",
+    "registryName": "com.clauxel.bumblebeereceipt/bumblebeereceipt-mcp",
+    "tools": [
+      "scan_endpoint_exposure",
+      "explain_package_hit",
+      "issue_release_receipt",
+      "read_scan_history"
+    ],
+    "docsRepo": "bumblebee-endpoint-receipt-mcp",
+    "docs": "https://github.com/clauxel/bumblebee-endpoint-receipt-mcp",
+    "packageName": "@clauxel/bumblebeereceipt-mcp",
+    "directoryName": "bumblebeereceipt-mcp",
+    "category": "Developer Tools",
+    "tagline": "Hosted MCP for developer endpoint scanner MCP.",
+    "description": "Bumblebee Endpoint Receipt is a paid remote MCP endpoint for developer endpoint scanner MCP. It exposes structured JSON tools, a public server card, token-based access, usage receipts, and audit-ready workflow evidence for AI agents and coding teams.",
+    "icon": "https://bumblebeereceipt.clauxel.com/favicon.svg"
+  }
+}
